@@ -4,26 +4,26 @@ using UnityEngine;
 
 public class AudioToggler : MonoBehaviour
 {
-    public bool isOn; // это свойство будет указывать включен сейчас звук или нет 
+    public bool isOn; // ГЅГІГ® Г±ГўГ®Г©Г±ГІГўГ® ГЎГіГ¤ГҐГІ ГіГЄГ Г§Г»ГўГ ГІГј ГўГЄГ«ГѕГ·ГҐГ­ Г±ГҐГ©Г·Г Г± Г§ГўГіГЄ ГЁГ«ГЁ Г­ГҐГІ 
 
     private void Start()
     {
 
-        isOn = true; // по умолчанию включен 
+        isOn = true; // ГЇГ® ГіГ¬Г®Г«Г·Г Г­ГЁГѕ ГўГЄГ«ГѕГ·ГҐГ­ 
 
-
+//23
     }
 
 
     public void OnOffSounds() 
     {
-        if (!isOn) // если звук выкл тоооо вкл
+        if (!isOn) // ГҐГ±Г«ГЁ Г§ГўГіГЄ ГўГ»ГЄГ« ГІГ®Г®Г®Г® ГўГЄГ«
         {
-            AudioListener.volume = 1f; // свойство будет вкл и выкл звук в игре
+            AudioListener.volume = 1f; // Г±ГўГ®Г©Г±ГІГўГ® ГЎГіГ¤ГҐГІ ГўГЄГ« ГЁ ГўГ»ГЄГ« Г§ГўГіГЄ Гў ГЁГЈГ°ГҐ
             isOn = true;  
-        }else if (isOn) //если вкл то выключаем
+        }else if (isOn) //ГҐГ±Г«ГЁ ГўГЄГ« ГІГ® ГўГ»ГЄГ«ГѕГ·Г ГҐГ¬
          {
-            AudioListener.volume = 0f; // весь звук будет выкл
+            AudioListener.volume = 0f; // ГўГҐГ±Гј Г§ГўГіГЄ ГЎГіГ¤ГҐГІ ГўГ»ГЄГ«
             isOn = false;
          }
 
